@@ -1,0 +1,11 @@
+C:\Users\Owner\codefellows\401\02-UnitTesting\ATM_Machine\bin\Debug\netcoreapp2.1\ATM_Machine.deps.json
+C:\Users\Owner\codefellows\401\02-UnitTesting\ATM_Machine\bin\Debug\netcoreapp2.1\ATM_Machine.runtimeconfig.json
+C:\Users\Owner\codefellows\401\02-UnitTesting\ATM_Machine\bin\Debug\netcoreapp2.1\ATM_Machine.runtimeconfig.dev.json
+C:\Users\Owner\codefellows\401\02-UnitTesting\ATM_Machine\bin\Debug\netcoreapp2.1\ATM_Machine.dll
+C:\Users\Owner\codefellows\401\02-UnitTesting\ATM_Machine\bin\Debug\netcoreapp2.1\ATM_Machine.pdb
+C:\Users\Owner\codefellows\401\02-UnitTesting\ATM_Machine\obj\Debug\netcoreapp2.1\ATM_Machine.csprojAssemblyReference.cache
+C:\Users\Owner\codefellows\401\02-UnitTesting\ATM_Machine\obj\Debug\netcoreapp2.1\ATM_Machine.csproj.CoreCompileInputs.cache
+C:\Users\Owner\codefellows\401\02-UnitTesting\ATM_Machine\obj\Debug\netcoreapp2.1\ATM_Machine.AssemblyInfoInputs.cache
+C:\Users\Owner\codefellows\401\02-UnitTesting\ATM_Machine\obj\Debug\netcoreapp2.1\ATM_Machine.AssemblyInfo.cs
+C:\Users\Owner\codefellows\401\02-UnitTesting\ATM_Machine\obj\Debug\netcoreapp2.1\ATM_Machine.dll
+C:\Users\Owner\codefellows\401\02-UnitTesting\ATM_Machine\obj\Debug\netcoreapp2.1\ATM_Machine.pdb
