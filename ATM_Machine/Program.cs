@@ -21,12 +21,32 @@ namespace ATM_Machine
             string UserAnswer = Console.ReadLine();
             if (UserAnswer == "1") //if statement for deposit
             {
-            Console.WriteLine("How much would you like to deposit?");
-            int userAmount = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("How much would you like to deposit?");
+                try
+                {
+                    int userAmount = Convert.ToInt32(Console.ReadLine());
+                    Total = TransactionDeposit(Total, userAmount);
+                    BeginTransaction(Total);
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine("Error: you didn't enter a valid number!");
+                    Console.WriteLine("Withdrawal failed.");
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                    Console.WriteLine("Withdrawal failed.");
+                    throw;
+                }
+                finally
+                {
+                    Console.WriteLine("Returning to main menu.\n");
+                    BeginTransaction(Total);
+                }
                 
-                Total = TransactionDeposit(Total, userAmount);
-                BeginTransaction(Total);
             }
+
             else if (UserAnswer == "2") // if they wanted to withdrawl
             {
             Console.WriteLine("How much would you like to withrawl?");
@@ -55,6 +75,7 @@ namespace ATM_Machine
         //if the user wanted to withdrawl, they are sent here
         static public int TransactionWithdrawl(int Total, int userAmount)
         {
+
             if (userAmount <= Total)
             {
                 int NewTotal = Total - userAmount;
