@@ -8,21 +8,27 @@ namespace XUnitTestProject1
     public class UnitTest1
     {
         [Fact]
-        public void WillDeposit()
+        public void CanDeposit()
         {
-            Assert.Equal(1200, Program.TransactionDeposit(200));
+            Assert.Equal(1200, Program.TransactionDeposit(1000, 200));
         }
         [Theory]
-        [InlineData(7, 1007)]
-        [InlineData(17, 1017)]
-        [InlineData(107, 1107)]
-        [InlineData(6, 1006)]
-        [InlineData(10, 1010)]
-        [InlineData(15, 
-            1015)]
-        public void NumberTest(int value, int expectedResult)
+        [InlineData(1000, 7, 1007)]
+        [InlineData(300, 57, 357)]
+        [InlineData(200, 13, 213)]
+        public void DepositTest(int total, int depo, int expectedResult)
         {
-            Assert.Equal(expectedResult, Program.TransactionDeposit(value));
+            Assert.Equal(expectedResult, Program.TransactionDeposit(total, depo));
         }
+        [Theory]
+        [InlineData(1000, 500, 500)]
+        [InlineData(800, 50, 750)]
+        [InlineData(50, 100, 50)]
+        public void CanWithdrawl(int total, int withdrawl, int expectedResult)
+        {
+            Assert.Equal(expectedResult, Program.TransactionWithdrawl(total, withdrawl));
+
+        }
+
     }
 }
